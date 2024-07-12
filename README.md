@@ -13,7 +13,7 @@ function safeApprove(address token, address to, uint value) internal {
     require(success && (data.length == 0 || abi.decode(data, (bool))), 'TransferHelper: APPROVE_FAILED');
 }
 ```
-##### Used Encoding/Decoding or Call Method: `abi.encodeWithSelector`, `abi.decode`, and `call`
+##### Used Methods: `abi.encodeWithSelector`, `abi.decode`, and `call`
 ##### Explanation
 
 - **Purpose**: The `safeApprove` function is designed to safely approve a specified amount of tokens to be transferred from the caller's account to another address. This is a critical operation in DeFi applications, enabling users to authorize others to spend tokens on their behalf.
